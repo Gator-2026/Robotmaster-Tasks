@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(AlgorithmTask5 CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(OpenCV_DIR "D:/MSYS2/home/ASUS/build-mingw")
+find_package(OpenCV REQUIRED)
+add_executable(AlgorithmTask5 AlgorithmTask5.cpp)
+target_link_libraries(AlgorithmTask5 PRIVATE ${OpenCV_LIBS})

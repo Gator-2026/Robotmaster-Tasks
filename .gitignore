@@ -1,0 +1,19 @@
+# Visual Studio 缓存和用户文件
+.vs/
+build/
+out/
+*.ipch
+*.user
+*.suo
+*.sdf
+*.opensdf
+
+# 构建输出
+Debug/
+Release/
+x64/
+x86/
+*.exe
+*.obj
+*.pdb
+*.ilk
