@@ -99,6 +99,7 @@ cv::Mat getlightmask(cv::Mat&img) {
 		}
 	}
 	cv::imshow("possiblelights", imgcopy);
+	cv::imwrite("output/possiblelights.png", imgcopy, { cv::IMWRITE_PNG_COMPRESSION,3 });
 	//cv::Mat blackmask, blackmask1;
 	//cv::inRange(img, cv::Scalar(0, 16, 10), cv::Scalar(255, 32, 36), blackmask);
 	//cv::imshow("blackmask", blackmask);
@@ -174,6 +175,7 @@ cv::Mat getlightmask(cv::Mat&img) {
 		}
 	}
 	cv::imshow("detect", img);
+	cv::imwrite("output/detect.png", img, { cv::IMWRITE_PNG_COMPRESSION,3 });
 	cv::waitKey(0);
 	return mask2;
 }
